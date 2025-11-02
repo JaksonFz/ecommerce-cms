@@ -30,7 +30,7 @@ export function useUpdateCategory() {
     });
 }
 
-export function useDeleteCatagory() {
+export function useDeleteCategory() {
     return useMutation<void, Error, string>({
         mutationFn: (id: string) => CategoryService.delete(id)
     });
